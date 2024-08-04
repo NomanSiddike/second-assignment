@@ -12,6 +12,7 @@ body {
 }
 
 .btn-primary {
+  color: rgb(255, 255, 255);
   border-radius: 46px;
   background: rgb(230, 83, 60);
   font-size: 18px;
@@ -60,7 +61,9 @@ body {
   gap: 50px;
   font-size: 18px;
   font-weight: 400;
-  /* border: 2px solid white; */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 0 20px 0 5px;
 }
 
 .bar {
@@ -160,9 +163,9 @@ body {
 /* Change Your Habit Style Start */
 .habit-container {
   max-width: 1440px;
-  /* border: 2px solid yellow; */
-  margin: 50px auto 50px auto;
+  margin: 100px auto;
   text-align: center;
+  /* border: 2px solid yellow; */
 }
 
 .habit-title {
@@ -188,11 +191,53 @@ body {
   margin: 20px 0 10px;
 }
 
-.habit-details{
-  margin: 0 40px;
+.habit-details {
+  margin: 50px 40px;
+}
+/* Change Your Habit Style End */
+
+/* Run on Extra Mile Style Start */
+.run-container {
+  max-width: 1440px;
+  margin: 100px auto;
+  display: flex;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  /* border: 2px solid green; */
 }
 
-/* Change Your Habit Style End */
+.run-content {
+  margin: 40px 0 0 80px;
+  /* border: 2px solid seagreen; */
+}
+
+.run-description {
+  margin: 30px 200px 30px 0;
+  /* border: 2px dotted yellow; */
+}
+.run-btn {
+  width: 180px;
+  height: 40px;
+  font-family: Inter;
+  cursor: pointer;
+  /* border: 2px solid wheat; */
+}
+
+.run-img{
+  /* margin-left: 300px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid slateblue; */
+}
+
+.run-image {
+  width: 90%;
+  height: 90%;
+  border-radius: 18px;
+  /* border: 2px solid darkcyan; */
+}
+/* Run on Extra Mile Style End */
 
 /* Responsive Style Start */
 @media screen and (max-width: 576px) {
@@ -221,7 +266,7 @@ body {
   .hero-content {
     margin: 0 auto 50px auto;
     padding-left: 40px;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
   }
   .hero-foot {
     gap: 10px;
@@ -250,10 +295,40 @@ body {
     /* justify-content: space-between; */
   }
 
-  .habit-details{
+  #habit-description{
+    padding: 0 50px;
+  }
+
+  .habit-details {
     margin: 0 120px;
     margin-bottom: 30px;
   }
 
+  .run-container {
+    margin: 0 30px;
+    flex-direction: column;
+    /* border: 2px solid green; */
+  }
+
+  .run-content {
+    margin: 60px 0 0 40px;
+  }
+
+  .run-description {
+    margin: 20px 50px 20px 0;
+  }
+
+  .run-image{
+    margin: 30px 0;
+    width: 90%;
+  }
+  .run-btn {
+    /* width: 180px;
+    height: 40px; */
+    width: 90%;
+    font-family: Inter;
+    cursor: pointer;
+    /* border: 2px solid wheat; */
+  }
 }
 /* Responsive Style End  */
