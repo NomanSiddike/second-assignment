@@ -23,6 +23,7 @@ body {
   text-align: center;
   padding: 5px 15px;
   border: none;
+  cursor: pointer;
   /* border: 2px solid skyblue; */
 }
 
@@ -247,10 +248,98 @@ body {
 }
 /* Run on Extra Mile Style End */
 
+/* BMI Style Start */
+.BMI {
+  text-align: center;
+  /* border: 2px solid yellow; */
+}
+
+.BMI-description {
+  margin: 20px 250px;
+}
+
+.BMI-Section {
+  /* height: 300px; */
+  background: rgb(34, 34, 34);
+  /* border: 2px solid green; */
+}
+
+.BMI-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid aqua; */
+}
+
+.BMI-chart, .BMI-calculator{
+  margin: 40px 0 80px 0;
+  /* border: 2px dotted red; */
+}
+
+/* .BMI-chart {
+  border: 2px solid seagreen;
+}
+
+.BMI-calculator {
+  border: 2px solid red;
+} */
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+th {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+td {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input, select{
+  width: 45%;
+  height: 18%;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  margin: 5px 0;
+  padding: 5px 10px;
+}
+
+select {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1); 
+}
+
+select option {
+  color: rgba(255, 255, 255, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+#activity-factor{
+  width: 90.5%;
+}
+
+/* BMI Style End */
+
 /* Meet our Team Style Start */
 .team-container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin:70px auto;
   /* border: 2px dotted slateblue; */
 }
 
@@ -259,6 +348,9 @@ body {
   margin-bottom: 50px;
 }
 
+.meet-description{
+  margin: 20px 220px 0 220px;
+}
 .team-image-container {
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
@@ -466,8 +558,38 @@ body {
     cursor: pointer;
     /* border: 2px solid wheat; */
   }
+
+  .BMI {
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 30px;
+    /* border: 2px solid yellow; */
+  }
+
+  .BMI-description {
+    margin: 20px 20px 20px 0;
+  }
+
+  .BMI-container{
+    flex-direction: column;
+  }
+
+  .BMI-chart, .BMI-calculator{
+    margin: 40px 0 20px 30px;
+    /* border: 2px dotted red; */
+  }
+
+  input, select{
+    width: 45%;
+    height: 60px;
+  }
+
   .team-container {
     margin-top: 50px;
+  }
+  
+  .meet-description{
+    margin: 20px 50px 0 50px;
   }
   .team-image-container {
     grid-template-columns: repeat(1, 1fr);
@@ -529,7 +651,7 @@ body {
   .foot-contents > div {
     margin: 20px 0;
   }
-  #hr{
+  #hr {
     width: 95%;
   }
 }
